@@ -1,6 +1,7 @@
-﻿using Content.Server.DeviceNetwork.Systems;
+using Content.Server.DeviceNetwork.Systems;
 using Content.Shared.CartridgeLoader;
 using Content.Shared.Interaction;
+using Content.Shared.PDA;
 using Robust.Server.Containers;
 using Robust.Server.GameObjects;
 using Robust.Server.Player;
@@ -269,7 +270,7 @@ public sealed class CartridgeLoaderSystem : SharedCartridgeLoaderSystem
     /// </summary>
     private void OnMapInit(EntityUid uid, CartridgeLoaderComponent component, MapInitEvent args)
     {
-        foreach (var prototype in component.PreinstalledPrograms)
+        foreach (var prototype in component.preinstalled)
         {
             InstallProgram(uid, prototype, deinstallable: false);
         }

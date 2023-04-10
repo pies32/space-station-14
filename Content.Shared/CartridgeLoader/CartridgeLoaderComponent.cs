@@ -1,4 +1,4 @@
-﻿using Content.Shared.Containers.ItemSlots;
+using Content.Shared.Containers.ItemSlots;
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization.TypeSerializers.Implementations;
 
@@ -16,7 +16,7 @@ public sealed class CartridgeLoaderComponent : Component
     /// List of programs that come preinstalled with this cartridge loader
     /// </summary>
     [DataField("preinstalled")]
-    public List<string> PreinstalledPrograms = new();
+    public List<string> preinstalled = new();
 
     /// <summary>
     /// The currently running program that has its ui showing

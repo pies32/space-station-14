@@ -591,7 +591,10 @@
     state: pda-atmos
   - type: Icon
     state: pda-atmos
-  - type: GasAnalyzer
+  - type: CartridgeLoader
+    preinstalled:
+      - GasAnalyzerCartridge
+      - NotekeeperCartridge
 
 - type: entity
   parent: BasePDA

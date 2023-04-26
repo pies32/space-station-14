@@ -33,3 +33,7 @@
       - DiscreteGasAnalyzer
   - type: StaticPrice
     price: 80
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 400
+      Glass: 100

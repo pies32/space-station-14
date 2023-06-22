@@ -424,6 +424,7 @@
     accentHColor: "#447987"
   - type: Icon
     state: pda-ce
+  - type: GasAnalyzer
 
 - type: entity
   parent: BasePDA
@@ -599,7 +600,10 @@
     state: pda-atmos
   - type: Icon
     state: pda-atmos
-  - type: GasAnalyzer
+  - type: CartridgeLoader
+    preinstalled:
+      - GasAnalyzerCartridge
+      - NotekeeperCartridge
 
 - type: entity
   parent: BasePDA
